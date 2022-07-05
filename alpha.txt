@@ -1,0 +1,109 @@
+package com.example.program1;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+public class MainActivity extends AppCompatActivity { @Override
+protected void onCreate(Bundle savedInstanceState)
+{
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+}
+}
+
+
+xml 
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity"
+android:paddingLeft="20dp"
+android:paddingTop="20dp"
+android:paddingRight="20dp">
+<RelativeLayout
+android:layout_width="wrap_content
+"
+android:layout_height="wrap_content"
+android:layout_gravity="center">
+<TextView
+android:layout_width="wrap_conten
+t"
+android:layout_height="wrap_content"
+android:text="COMPANY NAME"
+android:textSize="16dp"
+android:textColor="#000000"
+android:id="@+id/lbl_company_na
+me"
+android:layout_marginRight="10dp"
+/>
+<ImageView
+android:layout_width="50dp"
+android:layout_height="50dp"
+android:src="@drawable/email_icon"
+android:layout_toRightOf="@id/lbl_company_name"
+android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+<View
+android:layout_width="match_parent"
+android:layout_height="2dp"
+android:background="#000000"/>
+<TextView
+android:layout_width="match_parent
+"
+android:layout_height="wrap_content"
+android:text="Name:"
+android:textSize="16dp"
+android:layout_marginBottom="10dp
+" android:layout_marginTop="10dp"
+android:textColor="#000000"
+android:gravity="center"
+/>
+<TextView
+android:layout_width="match_parent
+"
+android:layout_height="wrap_content"
+android:text="JobTitle:"
+android:textSize="16dp"
+android:layout_marginBottom="10dp
+" android:layout_marginTop="10dp"
+android:textColor="#000000"
+android:gravity="center"
+/>
+<TextView
+android:layout_width="match_parent
+"
+android:layout_height="wrap_content"
+android:text="PhoneNumber:"
+android:textSize="16dp"
+android:layout_marginBottom="10dp
+" android:layout_marginTop="10dp"
+android:textColor="#000000"
+android:gravity="center"
+/>
+<TextView
+android:layout_width="match_parent
+"
+android:layout_height="wrap_content"
+android:text="Address:" 
+android:textSize="16dp"
+android:layout_marginBottom="10dp
+" android:layout_marginTop="10dp"
+android:textColor="#000000"
+android:gravity="center"
+/>
+<TextView
+android:layout_width="match_parent
+"
+android:layout_height="wrap_content"
+android:text="Email, Website, Fax"
+android:textSize="16dp"
+android:layout_marginBottom="10dp
+" android:layout_marginTop="10dp"
+android:textColor="#000000"
+android:gravity="center"
+/>
+</LinearLayout>
